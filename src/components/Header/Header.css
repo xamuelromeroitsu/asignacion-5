@@ -37,14 +37,14 @@
   color: #4338ca;
 }
 
-.cart-link {
+.nav-link-with-badge {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 
-.cart-badge {
+.nav-badge {
   background: #4338ca;
   color: #fff;
   font-size: 0.7rem;

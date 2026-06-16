@@ -33,8 +33,9 @@ export function CartProvider({ children }) {
 
   const removeFromCart = (productId) => {
     setCart((prev) => {
-      const { [productId]: _removed, ...rest } = prev
-      return rest
+      const next = { ...prev }
+      delete next[productId]
+      return next
     })
   }
 

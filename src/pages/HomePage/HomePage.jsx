@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useProducts } from '../../hooks/useProducts'
 import { useCart } from '../../contexts/CartContext'
+import { useFavorites } from '../../hooks/useFavorites'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import Skeleton from '../../components/Skeleton/Skeleton'
 import './HomePage.css'
@@ -8,6 +9,7 @@ import './HomePage.css'
 function HomePage() {
   const { products, loading, error, retry } = useProducts()
   const { cartItems, cartCount, cartTotal, addToCart, updateQuantity } = useCart()
+  const { isFavorite, toggleFavorite } = useFavorites()
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState('all')
 
@@ -105,7 +107,13 @@ function HomePage() {
 
           <div className="products-grid">
             {filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} onAddToCart={addToCart} />
+              <ProductCard
+                key={product.id}
+                product={product}
+                isFavorite={isFavorite(product.id)}
+                onToggleFavorite={toggleFavorite}
+                onAddToCart={addToCart}
+              />
             ))}
           </div>
         </section>
