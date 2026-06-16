@@ -2,23 +2,32 @@
   padding: 24px 0;
 }
 
+.favorites-page h1 {
+  color: var(--text-primary);
+}
+
+.favorites-page > p {
+  color: var(--text-secondary);
+}
+
 .favorites-empty {
   text-align: center;
   padding: 60px 20px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 .favorites-empty svg {
   margin-bottom: 16px;
-  color: #d1d5db;
+  color: var(--border);
 }
 
 .favorites-empty h2 {
   font-size: 1.3rem;
   margin-bottom: 8px;
-  color: #374151;
+  color: var(--text-primary);
 }
 
 .favorites-empty p {
   margin-bottom: 20px;
+  color: var(--text-secondary);
 }
