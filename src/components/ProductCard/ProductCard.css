@@ -69,22 +69,6 @@
   color: #111827;
 }
 
-.product-button {
-  border: none;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #111827 0%, #4338ca 100%);
-  color: #ffffff;
-  padding: 10px 12px;
-  cursor: pointer;
-  box-shadow: 0 10px 18px rgba(67, 56, 202, 0.25);
-  transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.product-button:hover {
-  transform: translateY(-1px);
-  opacity: 0.95;
-}
-
 @media (max-width: 640px) {
   .product-footer {
     flex-direction: column;
