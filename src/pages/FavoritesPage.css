@@ -1,0 +1,24 @@
+.favorites-page {
+  padding: 24px 0;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+}
+
+.favorites-empty svg {
+  margin-bottom: 16px;
+  color: #d1d5db;
+}
+
+.favorites-empty h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.favorites-empty p {
+  margin-bottom: 20px;
+}
